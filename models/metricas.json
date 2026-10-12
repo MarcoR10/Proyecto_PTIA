@@ -1,0 +1,73 @@
+{
+  "baseline_regla": {
+    "regla": "ratio_noche >= 4.10",
+    "recall": 0.5098039215686274,
+    "precision": 0.09154929577464789,
+    "f1": 0.15522388059701492,
+    "eventos": {
+      "n_episodios": 54,
+      "episodios_detectados": 30,
+      "recall_episodio": 0.5555555555555556,
+      "retraso_medio_dias": 0.03333333333333333,
+      "falsas_alarmas_dias": 1290,
+      "tasa_falsas_alarmas": 0.08863542668682149
+    }
+  },
+  "validacion": {
+    "umbral": 0.61,
+    "recall": 0.4,
+    "precision": 0.3556851311953353,
+    "f1": 0.3765432098765432,
+    "pr_auc": 0.3447287873969435,
+    "matriz_confusion": [
+      [
+        13678,
+        221
+      ],
+      [
+        183,
+        122
+      ]
+    ]
+  },
+  "test": {
+    "umbral": 0.61,
+    "recall": 0.33725490196078434,
+    "precision": 0.25,
+    "f1": 0.2871452420701169,
+    "pr_auc": 0.26127442336734696,
+    "matriz_confusion": [
+      [
+        14296,
+        258
+      ],
+      [
+        169,
+        86
+      ]
+    ],
+    "eventos": {
+      "n_episodios": 54,
+      "episodios_detectados": 29,
+      "recall_episodio": 0.5370370370370371,
+      "retraso_medio_dias": 1.1724137931034482,
+      "falsas_alarmas_dias": 258,
+      "tasa_falsas_alarmas": 0.0177270853373643
+    }
+  },
+  "importancias": {
+    "consumo_dia": 0.04210101198073119,
+    "consumo_nocturno": 0.1267325704612966,
+    "mediana_28d": 0.04511225437686095,
+    "std_28d": 0.047785959618653034,
+    "noche_mediana_28d": 0.04156628067359127,
+    "ratio_consumo": 0.03895729959064086,
+    "zscore_consumo": 0.028085106352532283,
+    "ratio_noche": 0.20940270775816625,
+    "ratio_noche_lag1": 0.15139425521840566,
+    "ratio_noche_lag2": 0.06654856316171565,
+    "ratio_noche_media3": 0.08443534566951706,
+    "fraccion_noche": 0.09785052840429495,
+    "dia_semana": 0.02002811673359413
+  }
+}
